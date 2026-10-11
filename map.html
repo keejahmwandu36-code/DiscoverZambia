@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Zambia's tourist attractions, national parks, lakes and cultural heritage on an interactive map.">
+
+    <title>Explore Map | Discover Zambia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet map styles -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <script src="js/script.js" defer></script>
+
+    <!-- Leaflet map library -->
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        defer
+    ></script>
+
+    <script src="js/map.js" defer></script>
+</head>
+
+<body class="map-page">
+
+<header class="navbar">
+    <a href="index.html" class="logo">
+        Discover<span>Zambia</span>
+    </a>
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+    >☰</button>
+
+    <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="culture.html">Culture &amp; Heritage</a>
+        <a href="map.html" class="active" aria-current="page">Explore Map</a>
+    </nav>
+</header>
+
+<main>
+    <section class="map-hero">
+        <div class="map-hero-content">
+            <p class="eyebrow">DISCOVER YOUR NEXT ADVENTURE</p>
+            <h1>Explore Zambia <span>on the Map</span></h1>
+            <p>
+                Find remarkable waterfalls, national parks, historic places
+                and lakes across Zambia. Select a destination to learn more.
+            </p>
+            <a href="#explore-map" class="btn btn-primary">
+                Start Exploring
+            </a>
+        </div>
+    </section>
+
+    <section class="section map-explorer" id="explore-map">
+        <div class="section-heading">
+            <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+            <h2>Explore Destinations</h2>
+            <p>
+                Search for a place or choose a category to discover
+                destinations on the interactive map.
+            </p>
+        </div>
+
+        <div class="map-controls">
+            <label class="map-search">
+                <span class="sr-only">Search destinations</span>
+                <input
+                    type="search"
+                    id="mapSearch"
+                    placeholder="Search places, parks or provinces..."
+                    autocomplete="off"
+                >
+            </label>
+
+            <div class="map-filters" role="group" aria-label="Destination categories">
+                <button class="map-filter active" data-category="all"
+                    aria-pressed="true" type="button">All Places</button>
+                <button class="map-filter" data-category="nature"
+                    aria-pressed="false" type="button">Nature</button>
+                <button class="map-filter" data-category="wildlife"
+                    aria-pressed="false" type="button">Wildlife</button>
+                <button class="map-filter" data-category="water"
+                    aria-pressed="false" type="button">Lakes &amp; Rivers</button>
+                <button class="map-filter" data-category="history"
+                    aria-pressed="false" type="button">History</button>
+                <button class="map-filter" data-category="culture"
+                    aria-pressed="false" type="button">Culture</button>
+            </div>
+        </div>
+
+        <p id="mapResultCount" class="map-result-count" aria-live="polite"></p>
+
+        <div class="map-layout">
+            <aside class="map-sidebar">
+                <h3>Destinations</h3>
+                <p class="map-sidebar-hint">Select a place to locate it on the map.</p>
+                <div id="destinationList" class="destination-list">
+                    <p>Loading destinations...</p>
+                </div>
+            </aside>
+
+            <div class="map-main">
+                <div
+                    id="zambiaMap"
+                    role="application"
+                    aria-label="Interactive map of tourist destinations in Zambia"
+                ></div>
+
+                <p class="map-attribution-note">
+                    Map data © OpenStreetMap contributors.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-bottom-cta">
+        <p class="eyebrow">MAKE YOUR JOURNEY MEANINGFUL</p>
+        <h2>Discover More Than a Destination</h2>
+        <p>
+            Experience Zambia's landscapes, traditions, history and
+            cultural diversity.
+        </p>
+        <a href="culture.html" class="btn btn-primary">
+            Explore Cultural Heritage
+        </a>
+    </section>
+</main>
+
+<footer>
+    <p>
+        © <span id="year"></span>
+        Discover Zambia Tourism &amp; Cultural Heritage.
+    </p>
+    <p>Celebrating Zambia's natural beauty and cultural diversity.</p>
+</footer>
+
+</body>
+</html>
