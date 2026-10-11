@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Discover Zambia's traditional ceremonies, cultural heritage, music, food, crafts and living traditions.">
+
+    <title>Culture & Heritage | Discover Zambia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="culture-page">
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            Discover<span>Zambia</span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="attractions.html">Attractions</a>
+            <a href="culture.html" class="active" aria-current="page">
+                Culture & Heritage
+            </a>
+            <a href="map.html">Explore Map</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="culture-hero">
+            <div class="culture-hero-content">
+                <p class="eyebrow">OUR IDENTITY. OUR TRADITIONS.</p>
+
+                <h1>
+                    Discover the Rich
+                    <span>Cultural Heritage</span>
+                    of Zambia
+                </h1>
+
+                <p>
+                    Explore the traditions, ceremonies, stories, food,
+                    music and craftsmanship that connect generations
+                    and celebrate Zambia's cultural diversity.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#ceremonies" class="btn btn-primary">
+                        Explore Traditions
+                    </a>
+
+                    <a href="#living-culture" class="btn btn-outline">
+                        Discover Our Heritage
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-caption">
+                Celebrating the many cultures of Zambia
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="culture-intro section">
+            <div class="culture-intro-image">
+                <img
+                    src="https://lh3.googleusercontent.com/grass-cs/AABkmLeGZ76AAnQoVwdTQrlg4tUMoO62FuYtyL0Q2rojocvzrzyt9M06pUNY6ucZC9bmt6JDGw4EhvVlCGK4sNpXXfg3RYZwAxrQgR-kX588xYUGPzbd-bzQQAVCiYHjegDeMyLmyIBV=w289-h156-n-k-no"
+                    alt="Artistic expression and creativity">
+            </div>
+
+            <div class="culture-intro-content">
+                <p class="eyebrow">A NATION OF MANY CULTURES</p>
+
+                <h2>Where Heritage Lives Through Generations</h2>
+
+                <p>
+                    Zambia is home to many ethnic communities, each
+                    contributing unique languages, customs, artistic
+                    traditions, stories and ways of life.
+                </p>
+
+                <p>
+                    Traditional ceremonies bring communities together
+                    to honour their history, celebrate important
+                    occasions and pass cultural knowledge to younger
+                    generations.
+                </p>
+
+                <p>
+                    This information system helps visitors and local
+                    communities discover, appreciate and learn about
+                    this living heritage.
+                </p>
+
+                <a href="#ceremonies" class="text-link">
+                    Explore traditional ceremonies →
+                </a>
+            </div>
+        </section>
+
+        <!-- Ceremonies -->
+        <section class="section culture-discover" id="ceremonies">
+
+            <div class="section-heading">
+                <p class="eyebrow">TRADITIONS AND CELEBRATIONS</p>
+
+                <h2>Traditional Ceremonies</h2>
+
+                <p>
+                    Discover some of Zambia's well-known cultural
+                    celebrations and the communities that preserve them.
+                </p>
+            </div>
+
+            <!-- Search and filter -->
+            <div class="culture-controls">
+                <label class="search-box">
+                    <span class="sr-only">Search cultural heritage</span>
+
+                    <input
+                        type="search"
+                        id="cultureSearch"
+                        placeholder="Search ceremonies, traditions, food..."
+                        autocomplete="off">
+                </label>
+
+                <div class="filter-buttons"
+                     role="group"
+                     aria-label="Filter cultural categories">
+
+                    <button class="filter-btn active"
+                            type="button"
+                            data-filter="all"
+                            aria-pressed="true">
+                        All Heritage
+                    </button>
+
+                    <button class="filter-btn"
+                            type="button"
+                            data-filter="ceremony"
+                            aria-pressed="false">
+                        Ceremonies
+                    </button>
+
+                    <button class="filter-btn"
+                            type="button"
+                            data-filter="arts"
+                            aria-pressed="false">
+                        Arts & Crafts
+                    </button>
+
+                    <button class="filter-btn"
+                            type="button"
+                            data-filter="food"
+                            aria-pressed="false">
+                        Food & Traditions
+                    </button>
+                </div>
+            </div>
+
+            <p id="cultureResultCount"
+               class="result-count"
+               aria-live="polite"></p>
+
+            <div class="culture-grid" id="cultureGrid">
+
+                <!-- Kuomboka -->
+                <article class="culture-card"
+                         data-category="ceremony"
+                         data-search="kuomboka lozi western province lealui limulunga litunga royal barge flood season ceremony">
+
+                    <div class="culture-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlIdzB6L6__k7S5CDlcd21lcmPBW3YH62xrsmxADNtTw&s=10"
+                            alt="African river landscape representing the setting of traditional celebrations"
+                            loading="lazy">
+
+                        <span class="culture-tag">Ceremony</span>
+                    </div>
+
+                    <div class="culture-card-content">
+                        <p class="culture-location">Western Province</p>
+
+                        <h3>Kuomboka Ceremony</h3>
+
+                        <p>
+                            The Kuomboka is one of Zambia's most
+                            iconic cultural events, when the Lozi king,
+                            the Litunga, moves from the floodplain to
+                            higher ground as the Zambezi rises.
+                        </p>
+
+                        <button class="read-more"
+                                type="button"
+                                aria-expanded="false">
+                            Read more <span>+</span>
+                        </button>
+
+                        <div class="culture-extra" hidden>
+                            The ceremony is associated with the royal
+                            barge known as Nalikwanda and a procession
+                            from the Lealui area towards Limulunga.
+                            It reflects the relationship between Lozi
+                            culture, royal leadership and the seasonal
+                            flooding of the Zambezi floodplain. The
+                            event is marked by royal regalia, drumming,
+                            chants, music and a powerful display of
+                            community pride. Dates vary with water
+                            conditions, so local guidance is best.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Nc'wala -->
+                <article class="culture-card"
+                         data-category="ceremony"
+                         data-search="ncwala ngoni eastern province paramount chief mpezeni first fruits harvest dance ceremony">
+
+                    <div class="culture-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYvJIeZo5iMWpTNwZG00SGqiPhu31xvfDTXd41oYV_PQ&s=10"
+                            alt="A public celebration representing traditional festivities"
+                            loading="lazy">
+
+                        <span class="culture-tag">Ceremony</span>
+                    </div>
+
+                    <div class="culture-card-content">
+                        <p class="culture-location">Eastern Province</p>
+
+                        <h3>Nc'wala Ceremony</h3>
+
+                        <p>
+                            An important Ngoni celebration associated
+                            with the first fruits of the harvest,
+                            cultural identity and respect for
+                            traditional leadership.
+                        </p>
+
+                        <button class="read-more"
+                                type="button"
+                                aria-expanded="false">
+                            Read more <span>+</span>
+                        </button>
+
+                        <div class="culture-extra" hidden>
+                            The ceremony is associated with the Ngoni
+                            community under Paramount Chief Mpezeni.
+                            It features traditional songs, dances and
+                            cultural displays. It is commonly held
+                            around February, although arrangements
+                            should be confirmed with local organisers.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Likumbi Lya Mize -->
+                <article class="culture-card"
+                         data-category="ceremony"
+                         data-search="likumbi lya mize luvale northwestern province mize royal palace makishi masquerade initiation ceremony">
+
+                    <div class="culture-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_TEU7D2AAIH9Q6ds0KXZe101EJMvy2nNbcxt7lpdG2w&s=10"
+                            alt="Festive cultural gathering representing community celebrations"
+                            loading="lazy">
+
+                        <span class="culture-tag">Ceremony</span>
+                    </div>
+
+                    <div class="culture-card-content">
+                        <p class="culture-location">North-Western Province</p>
+
+                        <h3>Likumbi Lya Mize</h3>
+
+                        <p>
+                            A major Luvale cultural ceremony celebrating
+                            heritage, community identity and traditions
+                            connected with initiation and masquerade.
+                        </p>
+
+                        <button class="read-more"
+                                type="button"
+                                aria-expanded="false">
+                            Read more <span>+</span>
+                        </button>
+
+                        <div class="culture-extra" hidden>
+                            Associated with the Mize traditional
+                            headquarters, the ceremony includes
+                            performances by makishi masqueraders,
+                            traditional music and dance. Some aspects
+                            of initiation traditions are culturally
+                            significant and should be approached
+                            respectfully.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Traditional crafts -->
+                <article class="culture-card"
+                         data-category="arts"
+                         data-search="arts crafts baskets weaving pottery wood carving textiles traditional craftsmanship">
+
+                    <div class="culture-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPSMyEAuVfh9lrGxzqAsbn88fipZEoDx_Uv-L970TVeA&s=10"
+                            alt="Handcrafted artwork and creative work"
+                            loading="lazy">
+
+                        <span class="culture-tag">Arts & Crafts</span>
+                    </div>
+
+                    <div class="culture-card-content">
+                        <p class="culture-location">Across Zambia</p>
+
+                        <h3>Traditional Arts & Crafts</h3>
+
+                        <p>
+                            Explore the skills behind handmade baskets,
+                            pottery, wood carvings, textiles and
+                            decorative crafts produced by artisans.
+                        </p>
+
+                        <button class="read-more"
+                                type="button"
+                                aria-expanded="false">
+                            Read more <span>+</span>
+                        </button>
+
+                        <div class="culture-extra" hidden>
+                            Craft traditions can communicate local
+                            identity, practical knowledge and artistic
+                            expression. Materials and techniques vary
+                            across communities. Purchasing directly
+                            from artisans can help support local
+                            livelihoods and the continuation of these
+                            skills.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Traditional food -->
+                <article class="culture-card"
+                         data-category="food"
+                         data-search="nshima maize meal vegetables ifisashi beans fish traditional zambian food">
+
+                    <div class="culture-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsJJiozyIRjaFeHcE9bBnyuzrPE9aT_c9i2fiA1qVmxA&s=10"
+                            alt="A prepared meal representing food traditions"
+                            loading="lazy">
+
+                        <span class="culture-tag">Food & Traditions</span>
+                    </div>
+
+                    <div class="culture-card-content">
+                        <p class="culture-location">Across Zambia</p>
+
+                        <h3>Zambian Traditional Cuisine</h3>
+
+                        <p>
+                            Discover nshima, leafy vegetable dishes,
+                            beans, fish and other meals that bring
+                            families and communities together.
+                        </p>
+
+                        <button class="read-more"
+                                type="button"
+                                aria-expanded="false">
+                            Read more <span>+</span>
+                        </button>
+
+                        <div class="culture-extra" hidden>
+                            Nshima, usually prepared from maize meal,
+                            is a staple food in many Zambian households.
+                            It is often served with vegetables,
+                            legumes, meat or fish. Recipes, ingredients
+                            and eating customs differ between families
+                            and regions.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Music and dance -->
+                <article class="culture-card"
+                         data-category="arts"
+                         data-search="music dance drums singing traditional instruments performance oral storytelling">
+
+                    <div class="culture-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQpL4Zdi_vS-0U1qwfIevQyeUY28-TswTKRcx9Co_vQ&s=10"
+                            alt="Live musical performance representing the role of music in cultural celebrations"
+                            loading="lazy">
+
+                        <span class="culture-tag">Arts & Crafts</span>
+                    </div>
+
+                    <div class="culture-card-content">
+                        <p class="culture-location">Across Zambia</p>
+
+                        <h3>Music, Dance & Storytelling</h3>
+
+                        <p>
+                            Learn how songs, drums, dance and oral
+                            storytelling preserve memories, teach
+                            values and bring communities together.
+                        </p>
+
+                        <button class="read-more"
+                                type="button"
+                                aria-expanded="false">
+                            Read more <span>+</span>
+                        </button>
+
+                        <div class="culture-extra" hidden>
+                            Musical and performance traditions differ
+                            across Zambia's many communities. They can
+                            accompany ceremonies, social gatherings,
+                            celebrations and the sharing of community
+                            histories. Performances often connect
+                            younger generations with cultural knowledge.
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div id="noCultureResults" class="no-results" hidden>
+                <h3>No matching heritage items found</h3>
+                <p>Try a different search term or select another category.</p>
+
+                <button id="resetCultureFilters"
+                        class="btn btn-primary"
+                        type="button">
+                    Show all heritage
+                </button>
+            </div>
+        </section>
+
+        <!-- Heritage values -->
+        <section class="heritage-values" id="living-culture">
+            <div class="section-heading">
+                <p class="eyebrow">MORE TO DISCOVER</p>
+                <h2>Culture Beyond Ceremonies</h2>
+                <p>
+                    Everyday practices also help keep Zambia's heritage alive.
+                </p>
+            </div>
+
+            <div class="values-grid">
+                <article>
+                    <div class="value-icon" aria-hidden="true">◉</div>
+                    <h3>Languages & Stories</h3>
+                    <p>
+                        Explore the languages, oral histories, proverbs
+                        and stories passed from one generation to another.
+                    </p>
+                </article>
+
+                <article>
+                    <div class="value-icon" aria-hidden="true">♫</div>
+                    <h3>Music & Dance</h3>
+                    <p>
+                        Discover performances that express identity,
+                        celebrate important events and strengthen
+                        community relationships.
+                    </p>
+                </article>
+
+                <article>
+                    <div class="value-icon" aria-hidden="true">✦</div>
+                    <h3>Craftsmanship</h3>
+                    <p>
+                        Learn about the knowledge, materials and creative
+                        skills used to make traditional objects and artwork.
+                    </p>
+                </article>
+
+                <article>
+                    <div class="value-icon" aria-hidden="true">⌂</div>
+                    <h3>Food & Community</h3>
+                    <p>
+                        Understand how food, hospitality and shared meals
+                        contribute to family and community life.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Responsible tourism -->
+        <section class="culture-cta">
+            <div>
+                <p class="eyebrow">TRAVEL WITH RESPECT</p>
+                <h2>Help Keep Zambia's Heritage Alive</h2>
+                <p>
+                    Learn from local communities, respect cultural
+                    protocols, ask permission before photographing
+                    people, and support local artists and guides.
+                </p>
+
+                <a href="attractions.html" class="btn btn-primary">
+                    Explore Zambia
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span>
+            Discover Zambia Tourism & Cultural Heritage.
+        </p>
+
+        <p>Celebrating Zambia's natural beauty and cultural diversity.</p>
+    </footer>
+
+</body>
+</html>
