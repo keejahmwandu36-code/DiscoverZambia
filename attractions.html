@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore Zambia's beautiful waterfalls, national parks, wildlife, lakes and historic tourist attractions.">
+
+    <title>Tourist Attractions | Discover Zambia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="attractions-page">
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            Discover<span>Zambia</span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="attractions.html" class="active" aria-current="page">
+                Attractions
+            </a>
+            <a href="culture.html">Culture & Heritage</a>
+            <a href="map.html">Explore Map</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero section -->
+        <section class="attractions-hero">
+            <div class="attractions-hero-content">
+                <p class="eyebrow">EXPLORE THE REAL AFRICA</p>
+
+                <h1>
+                    Discover Zambia's
+                    <span>Natural Wonders</span>
+                </h1>
+
+                <p>
+                    From the magnificent Victoria Falls to extraordinary
+                    wildlife, peaceful lakes and breathtaking landscapes,
+                    explore the destinations that make Zambia unforgettable.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#destinations" class="btn btn-primary">
+                        Explore Destinations
+                    </a>
+
+                    <a href="map.html" class="btn btn-outline">
+                        Explore the Map
+                    </a>
+                </div>
+            </div>
+
+            <div class="attractions-caption">
+                Discover the beauty of Zambia
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="section attractions-intro">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR ADVENTURE STARTS HERE</p>
+                <h2>Explore the Best of Zambia</h2>
+
+                <p>
+                    Discover natural landmarks, wildlife destinations,
+                    historical places and peaceful escapes across the country.
+                </p>
+            </div>
+
+            <div class="attraction-highlights">
+                <article>
+                    <span class="highlight-icon" aria-hidden="true">✦</span>
+                    <h3>Natural Wonders</h3>
+                    <p>Explore waterfalls, rivers, mountains and landscapes.</p>
+                </article>
+
+                <article>
+                    <span class="highlight-icon" aria-hidden="true">◎</span>
+                    <h3>Wildlife Safaris</h3>
+                    <p>Discover national parks and remarkable wildlife.</p>
+                </article>
+
+                <article>
+                    <span class="highlight-icon" aria-hidden="true">⌖</span>
+                    <h3>Local Discoveries</h3>
+                    <p>Find lakes, heritage sites and places worth visiting.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Destinations -->
+        <section class="section attractions-list" id="destinations">
+
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR NEXT DESTINATION</p>
+                <h2>Popular Tourist Attractions</h2>
+
+                <p>
+                    Search and filter destinations to discover places
+                    that match your interests.
+                </p>
+            </div>
+
+            <div class="attraction-controls">
+                <label class="attraction-search">
+                    <span class="sr-only">Search attractions</span>
+                    <input
+                        type="search"
+                        id="attractionSearch"
+                        placeholder="Search destinations or provinces..."
+                        autocomplete="off">
+                </label>
+
+                <div class="attraction-filters"
+                     role="group"
+                     aria-label="Filter attractions">
+
+                    <button type="button"
+                            class="attraction-filter active"
+                            data-filter="all"
+                            aria-pressed="true">
+                        All Places
+                    </button>
+
+                    <button type="button"
+                            class="attraction-filter"
+                            data-filter="nature"
+                            aria-pressed="false">
+                        Nature
+                    </button>
+
+                    <button type="button"
+                            class="attraction-filter"
+                            data-filter="wildlife"
+                            aria-pressed="false">
+                        Wildlife
+                    </button>
+
+                    <button type="button"
+                            class="attraction-filter"
+                            data-filter="history"
+                            aria-pressed="false">
+                        History
+                    </button>
+
+                    <button type="button"
+                            class="attraction-filter"
+                            data-filter="water"
+                            aria-pressed="false">
+                        Lakes & Rivers
+                    </button>
+                </div>
+            </div>
+
+            <p id="attractionResultCount"
+               class="attraction-result-count"
+               aria-live="polite"></p>
+
+            <div class="attraction-grid" id="attractionGrid">
+
+                <!-- Victoria Falls -->
+                <article class="attraction-card"
+                         data-category="nature water"
+                         data-search="victoria falls mosi oa tunya livingstone southern province waterfall zambezi river adventure">
+
+                    <div class="attraction-image">
+                        <img
+                            src="https://lh3.googleusercontent.com/grass-cs/AABkmLfeqWn4U0AfqYp15AL5eRQbwPENFEQSM0omPqpqnRoQdVZunR0PDra11EqLQJc588u1uTDPrNW8-IIWMYnrad7h86kQuZe77HrbEQ4yHIAEMOEqyPZT-OSKnryqIKclm8KBWWwlMw=w145-h156-n-k-no"
+                            alt="Scenic natural landscape"
+                            loading="lazy">
+
+                        <span class="attraction-tag">Natural Wonder</span>
+                    </div>
+
+                    <div class="attraction-content">
+                        <p class="attraction-location">Livingstone, Southern Province</p>
+                        <h3>Victoria Falls</h3>
+
+                        <p>
+                            Experience one of the world's most celebrated
+                            waterfalls, formed where the Zambezi River
+                            plunges into a dramatic gorge.
+                        </p>
+
+                        <button class="attraction-details-btn"
+                                type="button"
+                                aria-expanded="false">
+                            Discover destination <span>+</span>
+                        </button>
+
+                        <div class="attraction-extra" hidden>
+                            <p><strong>Best known for:</strong> Waterfall
+                            viewpoints, the rainforest, scenic photography
+                            and adventure activities.</p>
+
+                            <p><strong>Visitor tip:</strong> Water levels
+                            and visibility vary by season. Check local
+                            conditions before travelling.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- South Luangwa -->
+                <article class="attraction-card"
+                         data-category="wildlife nature"
+                         data-search="south luangwa national park eastern province safari walking safari elephants lions leopards wildlife">
+
+                    <div class="attraction-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlF77kffoENxRWdxgkrdD4gjBB1oNlxFtHaZsTg1kcRg&s=10"
+                            alt="African safari wildlife"
+                            loading="lazy">
+
+                        <span class="attraction-tag">Wildlife</span>
+                    </div>
+
+                    <div class="attraction-content">
+                        <p class="attraction-location">Eastern Province</p>
+                        <h3>South Luangwa National Park</h3>
+
+                        <p>
+                            Explore a celebrated wildlife destination
+                            known for safari experiences, diverse habitats
+                            and the Luangwa River ecosystem.
+                        </p>
+
+                        <button class="attraction-details-btn"
+                                type="button"
+                                aria-expanded="false">
+                            Discover destination <span>+</span>
+                        </button>
+
+                        <div class="attraction-extra" hidden>
+                            <p><strong>Best known for:</strong> Guided
+                            walking safaris, game drives and opportunities
+                            to observe wildlife in its natural habitat.</p>
+
+                            <p><strong>Visitor tip:</strong> Safari
+                            conditions vary seasonally. Arrange visits
+                            with established local operators.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Lower Zambezi -->
+                <article class="attraction-card"
+                         data-category="wildlife water nature"
+                         data-search="lower zambezi national park lusaka province zambezi river canoe safari elephants wildlife">
+
+                    <div class="attraction-image">
+                        <img
+                            src="data:image/jpeg;base64,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"
+                            alt="Green natural landscape"
+                            loading="lazy">
+
+                        <span class="attraction-tag">Safari & Nature</span>
+                    </div>
+
+                    <div class="attraction-content">
+                        <p class="attraction-location">Along the Zambezi River</p>
+                        <h3>Lower Zambezi National Park</h3>
+
+                        <p>
+                            Discover river scenery, wildlife and outdoor
+                            adventures in a remarkable national park
+                            along the Zambezi.
+                        </p>
+
+                        <button class="attraction-details-btn"
+                                type="button"
+                                aria-expanded="false">
+                            Discover destination <span>+</span>
+                        </button>
+
+                        <div class="attraction-extra" hidden>
+                            <p><strong>Best known for:</strong> Wildlife
+                            viewing, river-based activities and scenic
+                            safari experiences.</p>
+
+                            <p><strong>Visitor tip:</strong> Use licensed
+                            guides and follow wildlife safety instructions.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kafue -->
+                <article class="attraction-card"
+                         data-category="wildlife nature"
+                         data-search="kafue national park western central southern province wildlife safari plains birds antelope">
+
+                    <div class="attraction-image">
+                        <img
+                            src="data:image/jpeg;base64,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"
+                            alt="Woodland landscape"
+                            loading="lazy">
+
+                        <span class="attraction-tag">National Park</span>
+                    </div>
+
+                    <div class="attraction-content">
+                        <p class="attraction-location">Western and Central Zambia</p>
+                        <h3>Kafue National Park</h3>
+
+                        <p>
+                            Explore one of Zambia's largest national parks,
+                            with varied habitats, wildlife and expansive
+                            natural landscapes.
+                        </p>
+
+                        <button class="attraction-details-btn"
+                                type="button"
+                                aria-expanded="false">
+                            Discover destination <span>+</span>
+                        </button>
+
+                        <div class="attraction-extra" hidden>
+                            <p><strong>Best known for:</strong> Extensive
+                            wilderness, wildlife viewing, birdlife and
+                            varied ecosystems.</p>
+
+                            <p><strong>Visitor tip:</strong> Distances
+                            can be substantial, so plan transport and
+                            accommodation before travelling.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Lake Kariba -->
+                <article class="attraction-card"
+                         data-category="water nature"
+                         data-search="lake kariba southern province siavonga lake fishing boating sunsets tourism">
+
+                    <div class="attraction-image">
+                        <img
+                            src="data:image/jpeg;base64,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"
+                            alt="Water and waves along a lake or coastline"
+                            loading="lazy">
+
+                        <span class="attraction-tag">Lake & Leisure</span>
+                    </div>
+
+                    <div class="attraction-content">
+                        <p class="attraction-location">Southern Province</p>
+                        <h3>Lake Kariba</h3>
+
+                        <p>
+                            Enjoy expansive waters, peaceful scenery
+                            and lakeside experiences around Siavonga
+                            and other accessible areas.
+                        </p>
+
+                        <button class="attraction-details-btn"
+                                type="button"
+                                aria-expanded="false">
+                            Discover destination <span>+</span>
+                        </button>
+
+                        <div class="attraction-extra" hidden>
+                            <p><strong>Best known for:</strong> Boating,
+                            fishing, scenic views and lakeside holidays.</p>
+
+                            <p><strong>Visitor tip:</strong> Follow
+                            boating safety rules and check lake
+                            conditions before going on the water.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Shiwa Ng'andu -->
+                <article class="attraction-card"
+                         data-category="history nature"
+                         data-search="shiwa ngandu northern province historic manor house estate colonial history architecture tourism">
+
+                    <div class="attraction-image">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyodTtB7C19j_9zHhQBDMc4jvNGR6U61SPlouhpkzKPw&s=10"
+                            alt="Historic architectural structure"
+                            loading="lazy">
+
+                        <span class="attraction-tag">History</span>
+                    </div>
+
+                    <div class="attraction-content">
+                        <p class="attraction-location">Northern Province</p>
+                        <h3>Shiwa Ng'andu</h3>
+
+                        <p>
+                            Discover a historic estate with distinctive
+                            architecture and a story connected to Zambia's
+                            twentieth-century history.
+                        </p>
+
+                        <button class="attraction-details-btn"
+                                type="button"
+                                aria-expanded="false">
+                            Discover destination <span>+</span>
+                        </button>
+
+                        <div class="attraction-extra" hidden>
+                            <p><strong>Best known for:</strong> Historic
+                            buildings, the estate's heritage and its
+                            distinctive setting in northern Zambia.</p>
+
+                            <p><strong>Visitor tip:</strong> Confirm
+                            access arrangements and visiting conditions
+                            before making the journey.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="attraction-no-results" id="attractionNoResults" hidden>
+                <h3>No destinations found</h3>
+                <p>Try another search term or select a different category.</p>
+
+                <button class="btn btn-primary"
+                        type="button"
+                        id="resetAttractionFilters">
+                    Show all destinations
+                </button>
+            </div>
+        </section>
+
+        <!-- Travel responsibly -->
+        <section class="attraction-cta">
+            <div>
+                <p class="eyebrow">PLAN YOUR ADVENTURE</p>
+
+                <h2>Your Next Journey Starts in Zambia</h2>
+
+                <p>
+                    Respect the environment, support local communities
+                    and discover Zambia responsibly.
+                </p>
+
+                <a href="culture.html" class="btn btn-primary">
+                    Explore Cultural Heritage
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span>
+            Discover Zambia Tourism & Cultural Heritage.
+        </p>
+
+        <p>Celebrating Zambia's natural beauty and cultural diversity.</p>
+    </footer>
+
+</body>
+</html>
